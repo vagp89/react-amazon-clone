@@ -27,7 +27,9 @@ const Header = () => {
         </div>
         <div className='header_option'>
           <AddShoppingCartIcon/>
-
+        </div>
+        <div className='header_optionBasket'>
+        <spam className='optionBasket'>0</spam>
         </div>
       </div>
     </div>
