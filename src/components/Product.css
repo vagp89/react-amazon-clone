@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  z-index:1;
+  z-index: 1;
   align-items: center;
   justify-content: flex-end;
   margin:10px;
@@ -35,4 +35,8 @@
 
 .product_price {
   margin-top: 5px;
+}
+
+.product_rating{
+  display: flex;
 }
