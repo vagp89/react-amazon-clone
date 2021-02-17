@@ -45,7 +45,7 @@
 
 }
 .header_option {
-    display:flex;
+  display:flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 7px;

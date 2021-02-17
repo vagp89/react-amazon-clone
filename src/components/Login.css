@@ -1,0 +1,117 @@
+.login{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+  align-items: center;
+
+}
+.login_logo{
+  margin-top: 20px;
+  margin-bottom: -12px;
+  object-fit: contain;
+  width: 126px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login_container{
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.login_container > h1{
+  font-weight: 500px;
+  margin-bottom: 20px;
+}
+
+.login_container > form > input{
+  margin-bottom: 5px;
+}
+
+.login_container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+}
+
+.login_container > p{
+  margin-top: 15px;
+  font-size:12px;
+
+ /* text-align: center;*/
+}
+
+.login_signInButtom {
+  background:#f0c14b;
+  border-radius:2px;
+  width: 100%;
+  height:30px;
+  border:1px solid lightgray;
+  margin-top:10px;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+
+.login_registerButton{
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: darkgrey;
+}
+.logo_link{
+   text-decoration: none;
+   font-size:12px;
+
+}
+
+.login_newRegister  {
+  width: 347px;
+  margin-top: 15px;
+
+
+}
+.login_newRegisterQuestion {
+  font-size:12px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 10px
+}
+.login-inner{
+  display: flex;
+  justify-content: space-between;
+  font-size:12px;
+  margin-top:30px;
+  height: 48px;
+  width: 100%;
+  margin-bottom: -18px;
+  background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 2px,transparent);
+}
+
+.logo_lastWords{
+  font-size:11px;
+  color: solid gray;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-inner-text{
+  display: flex;
+  color: #227ac8;
+
+}
+.logo_linkLast{
+text-decoration: none;
+margin-right: 25px;
+font-size:11px;
+margin-bottom: 30px;
+margin-right: 28px;
+
+}
