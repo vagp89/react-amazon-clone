@@ -38,6 +38,7 @@ const Payment = () => {
 
   }, [basket])
    console.log("the secret >>>", clientSecret)
+   console.log('😎', user)
 
   const handleSubmit = async (event) => {
     //fancy stripe code
@@ -52,11 +53,11 @@ const Payment = () => {
     //paymentIntent = payment confirmation
     db
     .collection('users')
-    .doc(user?.id)
+    .doc(user?.uid)
     .collection('orders')
     .doc(paymentIntent.id)
     .set({
-      bassket: basket,
+      basket: basket,
       amount: paymentIntent.amount,
       created: paymentIntent.created
     })
@@ -97,30 +98,28 @@ const Payment = () => {
             <h3> Delivery Address</h3>
           </div>
           <div className="payment_address">
-            <p>{user?.email}</p>
-            <p> 123 Otto Suhr Allee</p>
-            <p> Berlin, Germany</p>
-
+            <div className="address">
+              <p >{user?.email}</p>
+              <p > 123 Otto Suhr Allee Berlin, Germany</p>
+             </div>
           </div>
 
         </div>
         <div className="payment_section">
           <div className="payment_title">
             <h3> Review Items and delivery</h3>
-            <div className="payment_items">
-              {basket.map(item => (
-                <CheckoutProduct
-                  id={item.id}
-                  title={item.title}
-                  image={item.image}
-                  price={item.price}
-                  rating={item.rating}
-                  />
-                ))}
-            </div>
           </div>
-
-
+          <div className="payment_items">
+            {basket.map(item => (
+              <CheckoutProduct
+                id={item.id}
+                title={item.title}
+                image={item.image}
+                price={item.price}
+                rating={item.rating}
+                />
+              ))}
+          </div>
         </div>
         {/*Payment- section*/}
         <div className="payment_section">

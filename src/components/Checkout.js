@@ -14,10 +14,11 @@ const Checkout = () => {
           alt=""
         />
         <div>
+          <div className="checkouthello_title">
           <h3> Hello, {user?.email}</h3>
-          <h2 className="checkout_title">
-            Your shopping basket
-          </h2>
+          </div>
+          <h2 className="checkout_title">Your shopping basket</h2>
+
           {basket.map(item  => (
             <CheckoutProduct
               id={item.id}
