@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "clone-e9537"
+    "default": "clone-e9537",
+    "amzon-clone": "amzon-clone-vagp"
   }
 }
